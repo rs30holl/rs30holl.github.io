@@ -1,16 +1,25 @@
 <html>
     <head>
         <title>Index</title>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script type="text/javascript">
+            function sendEmail(){
+                Email.send({
+                    Host: "smtp.gmail.com",
+                    Username: "rh459419@gmail.com",
+                    Password: "doomRSH2021",
+                    To: 'rsh930@gmail.com',
+                    From: "rsh930@gmail.com",
+                    Subject: "New visit",
+                    Body: "Someone clicked on your link."
+                });
+            }
+        </script>
     </head>
     <body>
         <h1>Ryan Holland</h1><hr>
-        <a href="https://github.com/rs30holl/rs30holl.github.io" onclick="sendEmail()">Repo Page</a><p>
-        <a href="Resume.docx">Resume</a><p>
-        <a href="Resume-web.html">Resume (Web Version)</a>
-        
-        <input type="button" value="Send Email" onclick="sendEmail()">
-        
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script src="index.js"></script>
+        <a href="https://github.com/rs30holl/rs30holl.github.io" onclick="sendEmail()" onclick="sendEmail()">Repo Page</a><p>
+        <a href="Resume.docx" onclick="sendEmail()">Resume</a><p>
+        <a href="Resume-web.html" onclick="sendEmail()">Resume (Web Version)</a>
     </body>
 </html>
