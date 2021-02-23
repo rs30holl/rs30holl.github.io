@@ -8,5 +8,5 @@ function closeNav() {
 
 function showhide(whichDiv) {
     var div = document.getElementById(whichDiv);
-    div.classList.toggle('hidden');
+    div.classList.toggle('hidden'); 
 }
